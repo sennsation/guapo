@@ -1,0 +1,183 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --col1: #221316;
+    --col2: #431a16;
+    --col3: #762e20;
+    --col4: #b55628;
+    --col5: #b07346;
+    --col6: #edad70;
+    --col7: #f3d6b8;
+    --col8: #d0af9e;
+    --col9: #daccc3;
+    --col10: #f3ebe8;
+    --col11: #fefefe;
+    --font1: 'Merienda', cursive;
+    --font2: 'KoHo', sans-serif;
+
+
+}
+
+body {
+    background-color: var(--col10);
+    color: var(--col1);
+    margin: 0;
+    padding: 0;
+    font-family: var(--font2);
+    font-size: 20px;
+}
+
+/* Title */
+
+h1 {
+    padding: 250px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    font-family: var(--font1);
+    font-size: 40px;
+}
+
+
+h2 {
+    font-family: var(--font1);
+    font-size: 30px;
+
+}
+
+h3 {
+    font-family: var(--font1)
+}
+
+p {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.container {
+    padding: 0 10% 0 10%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex > div {
+    width: 50%;
+  }
+
+/* HEADER */
+
+header {
+    margin: 58px 0;
+    width: 100%;
+    min-height: 400px;
+    max-height: 10%;
+    background-color: var(--col2);
+    color: var(--col7);
+}
+
+.headerimage {
+    background: url(../images/IMG_20230122_120743.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
+    position:relative;
+}
+
+.uebergang-col2 {
+    background-image: linear-gradient(183deg, transparent 10%, var(--col2) 90%);
+    height: 400px;
+}
+
+/* Header Gallery */
+
+.mask1 {
+    -webkit-mask-image: url(https://www.w3schools.com/css/w3logo.png);
+    mask-image: url(https://www.w3schools.com/css/w3logo.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat; 
+}
+
+/* Navigation */
+
+nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-height: 60px;
+    text-align:center;
+    background-color: var(--col5);
+}
+
+nav a {
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    color: var(--col7);
+}
+
+
+nav a:hover {
+    background-color: var(--col1);
+    color: var(--col7);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+main {
+    margin-top: 30px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    padding: 20px 0;
+    background-color: var(--col1);
+    color: var(--col7);
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+figure{
+  Float: left;
+  width: 400px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+figure img {
+    width: 400px;
+    border-radius: 25px;
+}
+/*
+img {
+    border-radius: 25px;
+}
+*/
+figure video {
+    width: 400px;
+    border-radius: 25px;
+}
+
+figure figcaption {
+    text-align: center;
+    padding: 10px 20px;
+  }
+  
