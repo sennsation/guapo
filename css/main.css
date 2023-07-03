@@ -30,7 +30,7 @@ body {
 /* Title */
 
 h1 {
-    padding: 250px 0px 0px 0px;
+    padding: 350px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
     font-family: var(--font1);
     font-size: 40px;
@@ -56,36 +56,85 @@ p {
     padding: 0 10% 0 10%;
 }
 
+
+
+.container20 {
+    padding: 20px;
+}
+
 .flex {
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: stretch;
 }
 
 .flex > div {
-    width: 50%;
+    width: 43%;
+    margin: 10px;
+    padding: 20px;
+    border: var(--col2) dotted 3px;
   }
+
+  .flex > div >img {
+    max-width: 90%;
+    max-height: 400px;
+  }
+
+  .flex > article {
+    width: 43%;
+    padding: 20px;
+    border: var(--col2) dotted 3px;
+    margin: 10px;
+    
+  }
+
+.border {
+    border:var(--col2)dotted 3px;
+}
+
+table {
+    font-family: var(--font2);
+    font-size: 20px;
+}
+
 
 /* HEADER */
 
 header {
     margin: 58px 0;
     width: 100%;
-    min-height: 400px;
+    min-height: 500px;
     max-height: 10%;
     background-color: var(--col2);
     color: var(--col7);
 }
 
 .headerimage {
-    background: url(../images/IMG_20230122_120743.jpg) no-repeat center;
+    background: url(../images/k-IMG_20230122_120743.jpg) no-repeat center;
     background-size: cover;
-    height: 400px;
+    height: 500px;
+    position:relative;
+}
+
+
+.headerimage_gallery {
+    background: url(../images/k-IMG-20230416-WA0015.jpg) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    position:relative;
+}
+
+.headerimage_contact {
+    background: url(../images/k-IMG_20230522_161345.jpg) no-repeat center;
+    background-size: cover;
+    height: 500px;
     position:relative;
 }
 
 .uebergang-col2 {
-    background-image: linear-gradient(183deg, transparent 10%, var(--col2) 90%);
-    height: 400px;
+    background-image: linear-gradient(182deg, var(--col5) 10%, transparent 10%, transparent 68%, var(--col2) 68%);
+    height: 500px;
 }
 
 /* Header Gallery */
@@ -95,6 +144,11 @@ header {
     mask-image: url(https://www.w3schools.com/css/w3logo.png);
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat; 
+}
+
+.divmark {
+    padding: 20px;
+    border: red solid 3px;
 }
 
 /* Navigation */
@@ -120,7 +174,7 @@ nav a {
 
 
 nav a:hover {
-    background-color: var(--col1);
+    background-color: var(--col2);
     color: var(--col7);
 }
 
@@ -134,13 +188,16 @@ nav li {
     float: left;
 }
 
+
 main {
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 footer{
     width: 100%;
     height: 100px;
+    margin: 0 0 20px 0;
     padding: 20px 0;
     background-color: var(--col1);
     color: var(--col7);
