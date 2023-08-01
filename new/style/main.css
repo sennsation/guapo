@@ -1,0 +1,207 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --col1: #221316;
+    --col2: #431a16;
+    --col3: #762e20;
+    --col4: #b55628;
+    --col5: #b07346;
+    --col6: #edad70;
+    --col7: #f3d6b8;
+    --col8: #d0af9e;
+    --col9: #daccc3;
+    --col10: #f3ebe8;
+    --col11: #fefefe;
+    --font1: 'Merienda', cursive;
+    --font2: 'KoHo', sans-serif;
+
+
+}
+
+body {
+    background-color: var(--col10);
+    color: var(--col1);
+    margin: 0;
+    padding: 0;
+    font-family: var(--font2);
+    font-size: 20px;
+}
+
+/* Title */
+
+h1 {
+    padding: 20px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    font-family: var(--font1);
+    font-size: 40px;
+}
+
+
+h2 {
+    font-family: var(--font1);
+    font-size: 30px;
+
+}
+
+h3 {
+    font-family: var(--font1)
+}
+
+p {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+    .navbar .container-fluid, .navbar .container-fluid .collapse, .navbar-expand-lg .navbar-nav, .navbar-expand-lg .navbar-collapse  {
+        flex-direction:column;
+    }
+
+    .navbar {
+        background-color: var(--col2);
+        z-index: 2000;
+    }
+
+    .navbar-toggler {
+        background-color: var(--col4);
+    }    
+
+    .container-fluid .navcontainer, .container-fluid .collapse, .container-fluid .navSocialMedia {
+        background-color: red;
+        color: var(--col9);
+     }
+
+
+.welcomeImage {
+    background-color: #762e20;
+    border: red solid 1px;
+    padding: 0px;
+}
+.welcomeImage img, .carousel-item  {
+    width: auto;
+    max-height: 100vh;
+  }
+
+
+  .content .fullScreen   {
+    background-color: yellow;
+    height: 100vh;
+}
+
+
+carousel {
+    width: 100%;
+}
+
+
+@media screen and (min-width:721px) {
+    .navbar {
+        position: fixed;
+        right: 0;
+        min-width: 100px;
+        height: 100vh;
+        align-items: flex-start;
+        align-content: flex-start;
+       /* padding: 10px;*/
+       
+    }
+
+    .container-fluid {
+        height: 100vh;
+        }
+
+
+    .navcontainer{
+        text-align: right;
+    }
+
+    .container-fluid .collapse {
+        width: 60vw;
+    }
+
+    .navSocialMedia {
+        max-width: 100%;
+        border: solid red 1px
+
+    }
+
+    .socialMediaButtonContainter {
+        border: solid var(--col9) 2px;
+        text-align: right;
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+
+    .socialMediaImage{
+        height: 40px;
+        width: 40px;
+    }
+
+
+    .navbar .container-fluid, .navbar-epand-lg .navbar-collaps, .navbar-expand-lg .navbar-nav, .navbar-expand-lg .navbar-collapse  {
+        flex-direction:column;
+        justify-content: flex-start;
+
+    }
+
+    .content {
+        padding-right: 100px;
+    }
+
+
+   
+}
+
+@media screen and (max-width:720px) {
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        min-height: 80px;
+        align-items: flex-start;
+        align-content: flex-start;
+        padding: 10px;
+    }
+
+    .container-fluid {
+
+    }
+
+    .navcontainer{
+        width: 50%;
+        text-align: right;
+        
+    }
+
+    .navSocialMedia {
+        width: 50%;
+        display: flex;
+        border: solid red 1px
+    }
+
+    .socialMediaButtonContainter {
+        border: solid var(--col9) 2px;
+    }
+
+
+    .socialMediaImage{
+        max-height: 40px;
+        max-width: 40px;
+        margin: 10px;
+    }
+
+    .navbar .container-fluid, .navbar-epand-lg .navbar-collaps, .navbar-expand-lg .navbar-nav, .navbar-expand-lg .navbar-collapse  {
+        flex-direction: row-reverse;
+    }
+
+    .content {
+        padding-bottom: 100px;
+    }
+}
+
+
+
+@media screen and (max-width:719px) {
+
+}
