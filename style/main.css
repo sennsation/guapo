@@ -24,27 +24,28 @@ body {
     margin: 0;
     padding: 0;
     font-family: var(--font2);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /* Title */
 
 h1 {
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0px 10px 0px;
     margin: 0px 0px 0px 0px;
     font-family: var(--font1);
-    font-size: 40px;
+    font-size: 35px;
 }
 
 
 h2 {
     font-family: var(--font1);
-    font-size: 30px;
+    font-size: 28px;
 
 }
 
 h3 {
-    font-family: var(--font1)
+    font-family: var(--font1);
+    font-size: 22px;
 }
 
 p {
@@ -67,7 +68,6 @@ p {
     }    
 
     .container-fluid .navcontainer, .container-fluid .collapse, .container-fluid .navSocialMedia {
-        background-color: red;
         color: var(--col9);
      }
 
@@ -94,16 +94,26 @@ carousel {
 }
 
 
-@media screen and (min-width:721px) {
+
+
+/* Desktop */
+
+@media screen and (min-width:769px) {
     .navbar {
         position: fixed;
         right: 0;
-        min-width: 100px;
+        min-width: 80px;
         height: 100vh;
         align-items: flex-start;
         align-content: flex-start;
-       /* padding: 10px;*/
        
+    }
+
+    .content  {
+        padding: 0 82px 0 0;
+        margin: 0 0 0 0;
+        max-width: 100lh;
+        border: solid 10px red;
     }
 
     .container-fluid {
@@ -117,16 +127,22 @@ carousel {
 
     .container-fluid .collapse {
         width: 60vw;
+        padding: 20px 0 20px 0;
     }
 
     .navSocialMedia {
-        max-width: 100%;
-        border: solid red 1px
+        width: 50px;
+        padding: 20px 0 20px 0;
+
+    }
+
+    .navSocialMedia .container {
+        margin: 0;
+        padding: 0;
 
     }
 
     .socialMediaButtonContainter {
-        border: solid var(--col9) 2px;
         text-align: right;
         flex: 0 0 auto;
         width: 100%;
@@ -136,6 +152,7 @@ carousel {
     .socialMediaImage{
         height: 40px;
         width: 40px;
+        margin: 5px;
     }
 
 
@@ -144,16 +161,43 @@ carousel {
         justify-content: flex-start;
 
     }
-
-    .content {
-        padding-right: 100px;
+    
+    .collapse .containter .row .col-6 {
+        padding: 0 50px 0px 50px;
     }
-
 
    
 }
 
-@media screen and (max-width:720px) {
+/* Tablet and Mobile */
+@media screen and (max-width:768px) {
+    body {
+        font-size: 16px;
+    }
+    
+    /* Title */
+    
+    h1 {
+        font-size: 35px;
+    }
+    
+    
+    h2 {
+        font-size: 28px;
+    
+    }
+    
+    h3 {
+        font-size: 22px;
+    }
+
+    .content  {
+        padding: 0 0 100px 0;
+        margin: 0 0 0 0;
+        max-width: 100lh;
+        border: solid 10px red;
+    }
+
     .navbar {
         position: fixed;
         bottom: 0;
@@ -164,24 +208,31 @@ carousel {
         padding: 10px;
     }
 
-    .container-fluid {
+    .container-fluid .collapse{
+        padding: 20px 0 20px 0;
 
     }
 
     .navcontainer{
-        width: 50%;
+        width: 40%;
         text-align: right;
         
     }
 
     .navSocialMedia {
-        width: 50%;
+        width: 60%;
         display: flex;
-        border: solid red 1px
+    }
+
+    .navSocialMedia .container {
+        margin: 0;
+        padding: 0;
+
     }
 
     .socialMediaButtonContainter {
-        border: solid var(--col9) 2px;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
     }
 
 
@@ -198,10 +249,63 @@ carousel {
     .content {
         padding-bottom: 100px;
     }
+
+
+    .collapse .containter .row .col-6 {
+        padding: 0 20px 0px 20px;
+    }
 }
 
 
+/* Mobile Small */
+@media screen and (max-width:576px) {
+    body {
+        font-family: var(--font2);
+        font-size: 12px;
+    }
+    
+    /* Title */
+    
+    h1 {
+        font-size: 30px;
+    }
+    
+    
+    h2 {
+        font-size: 20px;
+    
+    }
+    
+    h3 {
+        font-size: 16px;
+    }
 
-@media screen and (max-width:719px) {
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        min-height: 80px;
+        align-items: flex-start;
+        align-content: flex-start;
+        padding: 10px;
+    }
+
+    .container-fluid .collapse{
+    }
+
+
+    .socialMediaButtonContainter {
+        width: 30px;
+    }
+
+
+    .socialMediaImage{
+        max-height: 30px;
+        max-width: 30px;
+    }
+
+    .collapse .containter .row .col-6 {
+        padding: 0 10px 0px 10px;
+    }
 
 }
