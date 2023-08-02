@@ -25,12 +25,13 @@ body {
     padding: 0;
     font-family: var(--font2);
     font-size: 18px;
+    line-height: 1.5;
 }
 
 /* Title */
 
 h1 {
-    padding: 20px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
     margin: 0px 0px 0px 0px;
     font-family: var(--font1);
     font-size: 35px;
@@ -67,10 +68,43 @@ p {
         background-color: var(--col4);
     }    
 
-    .container-fluid .navcontainer, .container-fluid .collapse, .container-fluid .navSocialMedia {
+    .navbar, .container-fluid .navcontainer, .container-fluid .collapse, .container-fluid .navSocialMedia {
         color: var(--col9);
      }
 
+     .navbar a {
+        color: var(--col9);
+        text-decoration-line:none;
+     }
+
+     .navbar .collapse a:hover , .navbar .collapse a:active {
+        color: var(--col4);
+        padding: 0 0 0 20px;
+        text-decoration-line:none;
+        width: 100%;
+
+     }
+
+
+     .navbar .collapse ul {
+        padding: 10px;
+        margin: 10px 0px 50px 0px;
+        border: solid 1px var(--col4);
+        border-radius: 10px;
+        
+     }
+
+     .navbar .collapse ul, li {
+       list-style-type: none;
+     }
+
+
+.paddingText{
+    padding:20px;
+}
+.welcomeText {
+    padding: 20px;
+}
 
 .welcomeImage {
     background-color: #762e20;
@@ -295,13 +329,13 @@ carousel {
 
 
     .socialMediaButtonContainter {
-        width: 30px;
+        width: 40px;
     }
 
 
     .socialMediaImage{
-        max-height: 30px;
-        max-width: 30px;
+        max-height: 40px;
+        max-width: 40px;
     }
 
     .collapse .containter .row .col-6 {
