@@ -79,7 +79,7 @@ p {
 
      .navbar .collapse a:hover , .navbar .collapse a:active {
         color: var(--col4);
-        padding: 0 0 0 20px;
+        padding: 0 0 0 5px;
         text-decoration-line:none;
         width: 100%;
 
@@ -287,6 +287,10 @@ carousel {
 
     .collapse .containter .row .col-6 {
         padding: 0 20px 0px 20px;
+    }
+
+    .content .fullScreen   {
+        max-height: 100vh;
     }
 }
 
