@@ -103,11 +103,8 @@ p {
 
 /* Content - first page - generally */
 
-.paddingText{
-    padding:20px;
-}
 .welcomeText {
-    padding: 20px;
+    padding: 20px 20px 20px 40px;
 }
 
 .welcomeImage {
@@ -115,9 +112,20 @@ p {
     border: red solid 1px;
     padding: 0px;
 }
-.welcomeImage img, .carousel-item  {
-    width: auto;
+.welcomeImage img, .carousel-item img  {
+    min-width: 80vw;
     max-height: 100vh;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+/* Image Slider - general */
+
+.carousel-item  {
+    /*width: auto;*/
+    max-width: 100%;
+    max-height: 100vh;
+    overflow: hidden;
   }
 
 
@@ -131,7 +139,12 @@ carousel {
     width: 100%;
 }
 
+/* Content - generally */
 
+
+.paddingText{
+    padding:20px 40px 20px 40px;
+}
 
 
 /* -------------------------- Desktop --------------------------  */
@@ -209,6 +222,8 @@ carousel {
         margin: 0 0 0 0;
         max-width: 100lh;
     }
+
+    
    
 }
 
@@ -308,6 +323,24 @@ carousel {
     .content .fullScreen   {
         max-height: 100vh;
     }
+
+    .welcomeText{
+        height: 30%;
+    }
+    
+    .welcomeImage {
+        height: 70%;
+        overflow: hidden;
+    }
+
+
+    /* Image Slider - Tablet and Mobile */
+    .welcomeImage img, .carousel-item img {
+        max-width: 110vw;
+        max-height: 100%;
+        object-fit: cover;
+        object-position: 50%;
+    }
 }
 
 
@@ -367,4 +400,9 @@ carousel {
 
     /* Content - first page - Mobile small */
 
+    /* Image Slider - Tablet and Mobile */
+    .welcomeImage img, .carousel-item img {
+        max-width: 200vw;
+
+    }
 }
