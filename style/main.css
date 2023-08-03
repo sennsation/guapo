@@ -28,7 +28,7 @@ body {
     line-height: 1.5;
 }
 
-/* Title */
+/* Title - generally */
 
 h1 {
     padding: 10px 0px 10px 0px;
@@ -54,6 +54,8 @@ p {
     margin: 0px 0px 0px 0px;
 }
 
+
+/* NAVBAR -  generally */
 
     .navbar .container-fluid, .navbar .container-fluid .collapse, .navbar-expand-lg .navbar-nav, .navbar-expand-lg .navbar-collapse  {
         flex-direction:column;
@@ -99,6 +101,8 @@ p {
      }
 
 
+/* Content - first page - generally */
+
 .paddingText{
     padding:20px;
 }
@@ -117,7 +121,7 @@ p {
   }
 
 
-  .content .fullScreen   {
+.content .fullScreen   {
     background-color: yellow;
     height: 100vh;
 }
@@ -130,9 +134,13 @@ carousel {
 
 
 
-/* Desktop */
+/* -------------------------- Desktop --------------------------  */
 
 @media screen and (min-width:769px) {
+
+
+    /* NAVBAR -  Desktop */
+
     .navbar {
         position: fixed;
         right: 0;
@@ -143,12 +151,6 @@ carousel {
        
     }
 
-    .content  {
-        padding: 0 82px 0 0;
-        margin: 0 0 0 0;
-        max-width: 100lh;
-        border: solid 10px red;
-    }
 
     .container-fluid {
         height: 100vh;
@@ -200,16 +202,25 @@ carousel {
         padding: 0 50px 0px 50px;
     }
 
+    /* Content - first page - Desktop */
+
+    .content  {
+        padding: 0 82px 0 0;
+        margin: 0 0 0 0;
+        max-width: 100lh;
+    }
    
 }
 
-/* Tablet and Mobile */
+/* -------------------------- Tablet and Mobile -------------------------- */
+
 @media screen and (max-width:768px) {
+   
     body {
         font-size: 16px;
     }
     
-    /* Title */
+    /* Title - Tablet and Mobile */
     
     h1 {
         font-size: 35px;
@@ -225,12 +236,9 @@ carousel {
         font-size: 22px;
     }
 
-    .content  {
-        padding: 0 0 100px 0;
-        margin: 0 0 0 0;
-        max-width: 100lh;
-        border: solid 10px red;
-    }
+
+
+  /* NAVBAR -  Tablet and Mobile */
 
     .navbar {
         position: fixed;
@@ -280,13 +288,21 @@ carousel {
         flex-direction: row-reverse;
     }
 
-    .content {
-        padding-bottom: 100px;
-    }
 
 
     .collapse .containter .row .col-6 {
         padding: 0 20px 0px 20px;
+    }
+
+
+    /* Content - first page - Tablet and Mobile */
+    
+    .content  {
+        padding: 0 0 100px 0;
+        margin: 0 0 0 0;
+        max-width: 100lh;
+        padding-bottom: 100px;
+
     }
 
     .content .fullScreen   {
@@ -295,14 +311,14 @@ carousel {
 }
 
 
-/* Mobile Small */
+/* -------------------------- Mobile small -------------------------- */
 @media screen and (max-width:576px) {
     body {
         font-family: var(--font2);
         font-size: 12px;
     }
     
-    /* Title */
+    /* Title - Mobile small*/
     
     h1 {
         font-size: 30px;
@@ -317,6 +333,9 @@ carousel {
     h3 {
         font-size: 16px;
     }
+
+      /* NAVBAR -  Mobile small */
+
 
     .navbar {
         position: fixed;
@@ -345,5 +364,7 @@ carousel {
     .collapse .containter .row .col-6 {
         padding: 0 10px 0px 10px;
     }
+
+    /* Content - first page - Mobile small */
 
 }
