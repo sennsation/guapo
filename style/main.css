@@ -85,7 +85,7 @@ p {
      }
 
      .navbar .collapse a:hover , .navbar .collapse a:active {
-        color: var(--col4);
+        color: var(--col5);
         padding: 0 0 0 5px;
         text-decoration-line:none;
         width: 100%;
@@ -96,7 +96,7 @@ p {
      .navbar .collapse ul {
         padding: 10px;
         margin: 10px 0px 50px 0px;
-        border: solid 1px var(--col4);
+        border: solid 1px var(--col5);
         border-radius: 10px;
         
      }
@@ -113,9 +113,10 @@ p {
 }
 
 .welcomeImage {
-    background-color: #762e20;
-    border: red solid 1px;
+    /*background-color: #762e20;*/
     padding: 0px;
+   /* border-image: url('border_picture_desktop.svg') 400px stretch;
+    border-left: 100px solid transparent;*/
 }
 
 
@@ -346,11 +347,11 @@ carousel {
     }
 
     .welcomeText{
-        height: 30%;
+        height: 40%;
     }
     
     .welcomeImage {
-        height: 70%;
+        height: 60%;
         overflow: hidden;
     }
 
