@@ -67,8 +67,8 @@ p {
     }
 
     .navbar {
-        background-color: var(--col2);
         z-index: 2000;
+        padding: 0;
     }
 
     .navbar-toggler {
@@ -77,6 +77,10 @@ p {
 
     .navbar, .container-fluid .navcontainer, .container-fluid .collapse, .container-fluid .navSocialMedia {
         color: var(--col9);
+     }
+
+     .container-fluid {
+        background-color: var(--col2);
      }
 
      .navbar a {
@@ -115,8 +119,6 @@ p {
 .welcomeImage {
     /*background-color: #762e20;*/
     padding: 0px;
-   /* border-image: url('border_picture_desktop.svg') 400px stretch;
-    border-left: 100px solid transparent;*/
 }
 
 
@@ -183,7 +185,9 @@ carousel {
         height: 100vh;
         align-items: flex-start;
         align-content: flex-start;
-       
+        border-left: 50px solid transparent;
+        border-image: url('../assets/img/border_nav_desktop_transparent.png') 150 stretch;
+      
     }
 
 
@@ -194,6 +198,7 @@ carousel {
 
     .navcontainer{
         text-align: right;
+        padding: 10px 0 0 0;
     }
 
     .container-fluid .collapse {
@@ -240,12 +245,21 @@ carousel {
     /* Content - first page - Desktop */
 
     .content  {
-        padding: 0 82px 0 0;
+        padding: 0 92px 0 0;
         margin: 0 0 0 0;
         max-width: 100lh;
     }
 
-    
+
+    .welcomeImage {
+        /*background-color: #762e20;*/
+        border-left: 70px solid transparent;
+        border-image: url('../assets/img/border_nav_desktop_transparent.png') 150 stretch;
+    }
+
+    .welcomeImageBorder {
+        border-left: 10px solid var(--col2);
+    }
    
 }
 
@@ -281,10 +295,19 @@ carousel {
         position: fixed;
         bottom: 0;
         width: 100%;
-        min-height: 80px;
+        min-height: 60px;
         align-items: flex-start;
         align-content: flex-start;
-        padding: 10px;
+        padding: 0px;
+        border-top: 50px solid transparent;
+        border-image: url('../assets/img/border_nav_mobile_transparent.png') 150 stretch;
+    }
+
+    .navcontainer-fluid {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: var(--col2);
+
     }
 
     .container-fluid .collapse{
@@ -295,6 +318,8 @@ carousel {
     .navcontainer{
         width: 40%;
         text-align: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
         
     }
 
@@ -347,12 +372,14 @@ carousel {
     }
 
     .welcomeText{
-        height: 40%;
+        height: 30%;
     }
     
     .welcomeImage {
-        height: 60%;
+        height: 70%;
         overflow: hidden;
+        border-left: none;
+        border-image: none;
     }
 
 
@@ -392,10 +419,9 @@ carousel {
         position: fixed;
         bottom: 0;
         width: 100%;
-        min-height: 80px;
+        min-height: 60px;
         align-items: flex-start;
         align-content: flex-start;
-        padding: 10px;
     }
 
     .container-fluid .collapse{
