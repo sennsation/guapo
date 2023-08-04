@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Merienda:wght@300;400;500;600;700;800;900&display=swap');
+
 :root {
     --black: #000;
     --white: #fff;
@@ -18,9 +20,10 @@
 
 }
 
+
 body {
     background-color: var(--col10);
-    color: var(--col1);
+    color: var(--col2);
     margin: 0;
     padding: 0;
     font-family: var(--font2);
@@ -35,12 +38,14 @@ h1 {
     margin: 0px 0px 0px 0px;
     font-family: var(--font1);
     font-size: 35px;
+    font-weight:bold;
 }
 
 
 h2 {
     font-family: var(--font1);
     font-size: 28px;
+    font-weight:bold;
 
 }
 
@@ -67,7 +72,7 @@ p {
     }
 
     .navbar-toggler {
-        background-color: var(--col4);
+        background-color: var(--col10);
     }    
 
     .navbar, .container-fluid .navcontainer, .container-fluid .collapse, .container-fluid .navSocialMedia {
@@ -112,25 +117,40 @@ p {
     border: red solid 1px;
     padding: 0px;
 }
+
+
 .welcomeImage img, .carousel-item img  {
-    min-width: 80vw;
-    max-height: 100vh;
-    object-fit: cover;
-    object-position: 50%;
+    min-width: 100%;
+    object-fit: cover; 
+    object-position: 50% 50%;
+    height: 100vh;
 }
+
 
 /* Image Slider - general */
 
 .carousel-item  {
     /*width: auto;*/
+    display: flex:
     max-width: 100%;
     max-height: 100vh;
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
   }
 
+  
+.carousel-control-next-icon, 
+.carousel-control-prev-icon {
+    background-color: var(--col2);
+    padding: 10px;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+}
 
 .content .fullScreen   {
-    background-color: yellow;
+    /*background-color: yellow;*/
     height: 100vh;
 }
 
@@ -145,6 +165,7 @@ carousel {
 .paddingText{
     padding:20px 40px 20px 40px;
 }
+
 
 
 /* -------------------------- Desktop --------------------------  */
@@ -335,12 +356,8 @@ carousel {
 
 
     /* Image Slider - Tablet and Mobile */
-    .welcomeImage img, .carousel-item img {
-        max-width: 110vw;
-        max-height: 100%;
-        object-fit: cover;
-        object-position: 50%;
-    }
+
+
 }
 
 
@@ -400,9 +417,4 @@ carousel {
 
     /* Content - first page - Mobile small */
 
-    /* Image Slider - Tablet and Mobile */
-    .welcomeImage img, .carousel-item img {
-        max-width: 200vw;
-
-    }
 }
