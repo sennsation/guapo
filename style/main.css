@@ -169,6 +169,10 @@ carousel {
     padding:20px 40px 20px 40px;
 }
 
+.inhaltAfterHeader {
+    background-color: #d0af9e;
+    background-image: linear-gradient(180deg, #431a16 0.5%, transparent 1.5%, transparent 98.5%, #431a16 100%);
+}
 
 
 /* -------------------------- Desktop --------------------------  */
@@ -299,6 +303,7 @@ carousel {
         align-items: flex-start;
         align-content: flex-start;
         padding: 0px;
+        /*background-image: linear-gradient(180deg, var(--col4), 50%, transparent 50%, transparent 70%, var(--col4) 70%);*/
         border-top: 50px solid transparent;
         border-image: url('../assets/img/border_nav_mobile_transparent.png') 150 stretch;
     }
@@ -312,6 +317,11 @@ carousel {
 
     .container-fluid .collapse{
         padding: 20px 0 20px 0;
+
+    }
+
+    .container-fluid {
+        border-top: 5px solid var(--col2);
 
     }
 
@@ -379,8 +389,20 @@ carousel {
         height: 70%;
         overflow: hidden;
         border-left: none;
-        border-image: none;
+        border-top: 70px solid transparent;
+        border-image: url('../assets/img/border_nav_mobile_transparent.png') 150 stretch;
+       /* border-image: url('../assets/img/wave_oben_und_unten_mobile_transparent.png') 150 stretch;*/
     }
+/*
+    .inhaltAfterHeader {
+        border-top: 70px solid transparent;
+        border-image: url('../assets/img/border_nav_mobile_transparent_180.png') 150 stretch;
+        background-image: none;
+
+    }*/
+
+    /* Content - generally - Tablet and Mobile */
+
 
 
     /* Image Slider - Tablet and Mobile */
