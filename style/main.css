@@ -124,17 +124,25 @@ p {
 }
 
 .welcomeText h1 {
-    font-size: 35px;
+    font-size: 28px;
 }
 
 
 .welcomeText h2 {
-    font-size: 28px;
+    font-size: 22px;
 
 }
 
 .welcomeText h3 {
-    font-size: 22px;
+    font-size: 20px;
+}
+
+.pageLogo {
+    min-height: 10%;
+}
+
+.pageTitel {
+    padding-top: 20px;
 }
 
 .welcomeImage {

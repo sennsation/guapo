@@ -91,6 +91,11 @@
         border-left: 10px solid var(--col2);
     }
 
+    .pageLogo {
+        min-height: 300px;
+    }
+    
+
 /* Content - generally */
 
     .inhaltAfterHeader {
