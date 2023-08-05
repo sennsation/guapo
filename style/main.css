@@ -43,13 +43,19 @@ h1 {
 
 
 h2 {
+    padding: 10px 0px 10px 0px;
     font-family: var(--font1);
-    font-size: 28px;
+    font-size: 35px;
     font-weight:bold;
 
 }
 
 h3 {
+    font-family: var(--font1);
+    font-size: 28px;
+}
+
+h4 {
     font-family: var(--font1);
     font-size: 22px;
 }
@@ -110,10 +116,25 @@ p {
      }
 
 
+
 /* Content - first page - generally */
 
 .welcomeText {
     padding: 20px 20px 20px 40px;
+}
+
+.welcomeText h1 {
+    font-size: 35px;
+}
+
+
+.welcomeText h2 {
+    font-size: 28px;
+
+}
+
+.welcomeText h3 {
+    font-size: 22px;
 }
 
 .welcomeImage {
@@ -166,7 +187,7 @@ carousel {
 
 
 .paddingText{
-    padding:20px 40px 20px 40px;
+    padding:40px 40px 50px 40px;
 }
 
 .inhaltAfterHeader {
@@ -283,14 +304,17 @@ carousel {
     
     
     h2 {
-        font-size: 28px;
+        font-size: 35px;
     
     }
     
     h3 {
-        font-size: 22px;
+        font-size: 28px;
     }
 
+    h4 {
+        font-size: 22px;
+    }
 
 
   /* NAVBAR -  Tablet and Mobile */
@@ -426,11 +450,15 @@ carousel {
     
     
     h2 {
-        font-size: 20px;
+        font-size: 30px;
     
     }
     
     h3 {
+        font-size: 20px;
+    }
+
+    h4 {
         font-size: 16px;
     }
 
