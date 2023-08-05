@@ -1,0 +1,65 @@
+/* -------------------------- Mobile small --------------------------
+   - Navigation bottom
+   - WelcomeSite 1 column
+
+*/
+
+@media screen and (max-width:576px) {
+    body {
+        font-family: var(--font2);
+        font-size: 12px;
+    }
+    
+    /* Title - Mobile small*/
+    
+    h1 {
+        font-size: 30px;
+    }
+    
+    
+    h2 {
+        font-size: 30px;
+    
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+      /* NAVBAR -  Mobile small */
+
+
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        min-height: 60px;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+
+    .container-fluid .collapse{
+    }
+
+
+    .socialMediaButtonContainter {
+        width: 40px;
+    }
+
+
+    .socialMediaImage{
+        max-height: 40px;
+        max-width: 40px;
+    }
+
+    .collapse .containter .row .col-6 {
+        padding: 0 10px 0px 10px;
+    }
+
+    /* Content - first page - Mobile small */
+
+}

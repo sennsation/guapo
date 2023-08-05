@@ -1,0 +1,149 @@
+
+/* -------------------------- Tablet and Mobile --------------------------
+   - Navigation bottom
+   - WelcomeSite 1 column
+*/
+
+@media screen and (max-width:768px) {
+   
+    body {
+        font-size: 16px;
+    }
+    
+    /* Title - Tablet and Mobile */
+    
+    h1 {
+        font-size: 35px;
+    }
+    
+    
+    h2 {
+        font-size: 35px;
+    
+    }
+    
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+
+  /* NAVBAR -  Tablet and Mobile */
+
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        min-height: 60px;
+        align-items: flex-start;
+        align-content: flex-start;
+        padding: 0px;
+        /*background-image: linear-gradient(180deg, var(--col4), 50%, transparent 50%, transparent 70%, var(--col4) 70%);*/
+        border-top: 50px solid transparent;
+        border-image: url('../assets/img/border_nav_mobile_transparent.png') 150 stretch;
+    }
+
+    .navcontainer-fluid {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: var(--col2);
+
+    }
+
+    .container-fluid .collapse{
+        padding: 20px 0 20px 0;
+
+    }
+
+    .container-fluid {
+        border-top: 5px solid var(--col2);
+
+    }
+
+    .navcontainer{
+        width: 40%;
+        text-align: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+
+    .navSocialMedia {
+        width: 60%;
+        display: flex;
+    }
+
+    .navSocialMedia .container {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .socialMediaButtonContainter {
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+
+
+    .socialMediaImage{
+        max-height: 40px;
+        max-width: 40px;
+        margin: 10px;
+    }
+
+    .navbar .container-fluid, .navbar-epand-lg .navbar-collaps, .navbar-expand-lg .navbar-nav, .navbar-expand-lg .navbar-collapse  {
+        flex-direction: row-reverse;
+    }
+
+
+
+    .collapse .containter .row .col-6 {
+        padding: 0 20px 0px 20px;
+    }
+
+
+    /* Content - first page - Tablet and Mobile */
+    
+    .content  {
+        padding: 0 0 100px 0;
+        margin: 0 0 0 0;
+        max-width: 100lh;
+        padding-bottom: 100px;
+
+    }
+
+    .content .fullScreen   {
+        max-height: 100vh;
+    }
+
+    .welcomeText{
+        height: 30%;
+    }
+    
+    .welcomeImage {
+        height: 70%;
+        overflow: hidden;
+        border-left: none;
+        border-top: 70px solid transparent;
+        border-image: url('../assets/img/border_nav_mobile_transparent.png') 150 stretch;
+       /* border-image: url('../assets/img/wave_oben_und_unten_mobile_transparent.png') 150 stretch;*/
+    }
+/*
+    .inhaltAfterHeader {
+        border-top: 70px solid transparent;
+        border-image: url('../assets/img/border_nav_mobile_transparent_180.png') 150 stretch;
+        background-image: none;
+
+    }*/
+
+    /* Content - generally - Tablet and Mobile */
+
+
+
+    /* Image Slider - Tablet and Mobile */
+
+
+}

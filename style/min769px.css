@@ -1,0 +1,94 @@
+/* -------------------------- Desktop --------------------------  
+    - Navigation Right
+    - WelcomeSite 2 column
+*/
+
+@media screen and (min-width:769px) {
+
+
+    /* NAVBAR -  Desktop */
+
+    .navbar {
+        position: fixed;
+        right: 0;
+        min-width: 80px;
+        height: 100vh;
+        align-items: flex-start;
+        align-content: flex-start;
+        border-left: 50px solid transparent;
+        border-image: url('../assets/img/border_nav_desktop_transparent.png') 150 stretch;
+      
+    }
+
+
+    .container-fluid {
+        height: 100vh;
+        }
+
+
+    .navcontainer{
+        text-align: right;
+        padding: 10px 0 0 0;
+    }
+
+    .container-fluid .collapse {
+        width: 60vw;
+        padding: 20px 0 20px 0;
+    }
+
+    .navSocialMedia {
+        width: 50px;
+        padding: 20px 0 20px 0;
+
+    }
+
+    .navSocialMedia .container {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .socialMediaButtonContainter {
+        text-align: right;
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+
+    .socialMediaImage{
+        height: 40px;
+        width: 40px;
+        margin: 5px;
+    }
+
+
+    .navbar .container-fluid, .navbar-epand-lg .navbar-collaps, .navbar-expand-lg .navbar-nav, .navbar-expand-lg .navbar-collapse  {
+        flex-direction:column;
+        justify-content: flex-start;
+
+    }
+    
+    .collapse .containter .row .col-6 {
+        padding: 0 50px 0px 50px;
+    }
+
+    /* Content - first page - Desktop */
+
+    .content  {
+        padding: 0 92px 0 0;
+        margin: 0 0 0 0;
+        max-width: 100lh;
+    }
+
+
+    .welcomeImage {
+        /*background-color: #762e20;*/
+        border-left: 70px solid transparent;
+        border-image: url('../assets/img/border_nav_desktop_transparent.png') 150 stretch;
+    }
+
+    .welcomeImageBorder {
+        border-left: 10px solid var(--col2);
+    }
+   
+}
