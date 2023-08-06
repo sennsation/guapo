@@ -66,6 +66,17 @@ p {
 }
 
 
+a {
+    color:var(--col4);
+}
+
+a:hover, a:visited, a:active {
+    color:var(--col4);
+    background-color:var(--col2);
+    border-radius: 5px;
+    
+}
+
 /* NAVBAR -  generally */
 
     .navbar .container-fluid, .navbar .container-fluid .collapse, .navbar-expand-lg .navbar-nav, .navbar-expand-lg .navbar-collapse  {
