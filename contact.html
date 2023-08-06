@@ -12,62 +12,6 @@
     <link href="style/max576px.css" rel="stylesheet">
 </head>
 <body>
-<?php
-// define variables and set to empty values
-$nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
-  } else {
-    $name = test_input($_POST["name"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
-      $nameErr = "Only letters and white space allowed";
-    }
-  }
-  
-  if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  } else {
-    $email = test_input($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format";
-    }
-  }
-    
-  if (empty($_POST["website"])) {
-    $website = "";
-  } else {
-    $website = test_input($_POST["website"]);
-    // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
-    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
-      $websiteErr = "Invalid URL";
-    }
-  }
-
-  if (empty($_POST["comment"])) {
-    $comment = "";
-  } else {
-    $comment = test_input($_POST["comment"]);
-  }
-
-  if (empty($_POST["gender"])) {
-    $genderErr = "Gender is required";
-  } else {
-    $gender = test_input($_POST["gender"]);
-  }
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?>
     <nav class="navbar">
         <div class="container-fluid d-flex">
           <div class="col-12 navcontainer">
@@ -169,33 +113,36 @@ function test_input($data) {
             <div class="container my-5">
               <div class="row justify-content-center">
                 <div class="col-lg-9">
-                  <h1 class="mb-3">Contact Us</h1>
+                  <h1 class="mb-3">Contact</h1>
                   <p>
-                    This contact form is copied from: https://codepen.io/tutsplus/pen/qBxPXZZ
-                    The basic PHP-code for sending the form is copied from: https://www.w3schools.com/php/php_form_complete.asp
+                    This contact form is copied from: <a href="https://codepen.io/tutsplus/pen/qBxPXZZ" target="_blank">https://codepen.io/tutsplus/pen/qBxPXZZ</a> <br><br>
+                  </p>  
+                  <p>
+                  I wanted to use php for sending the form, but php pages does not run on gitHub. So i used "mailto".
                   </p>
-                  <form>
+                  <br><br>
+                  <form action="mailto:guapod@test.com" method="post" enctype="text/plain">
                     <div class="row g-3">
                       <div class="col-md-12">
-                        <label for="your-name" class="form-label">Your Name and Surname</label>
-                        <input type="text" class="form-control" id="your-name" name="your-name" required>
+                        <label for="yourName" class="form-label">Name and Surname</label>
+                        <input type="text" class="form-control" id="yourName" name="yourName" required>
                       </div>
                       <div class="col-md-6">
-                        <label for="your-email" class="form-label">Your Email</label>
-                        <input type="email" class="form-control" id="your-email" name="your-email" required>
+                        <label for="yourEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="yourEmail" name="yourEmail" required>
                       </div>
                       <div class="col-md-6">
-                        <label for="your-subject" class="form-label">Your Subject</label>
-                        <input type="text" class="form-control" id="your-subject" name="your-subject">
+                        <label for="ssubject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="ssubject" name="ssubject">
                       </div>
                       <div class="col-12">
-                        <label for="your-message" class="form-label">Your Message</label>
-                        <textarea class="form-control" id="your-message" name="your-message" rows="5" required></textarea>
+                        <label for="yourMessage" class="form-label">Message</label>
+                        <textarea class="form-control" id="yourMessage" name="yourMessage" rows="5" required></textarea>
                       </div>
                       <div class="col-12">
                         <div class="row">
                           <div class="col-md-6">
-                            <button data-res="<?php echo $sum; ?>" type="submit" class="btn btn-dark w-100 fw-bold" >Send</button>
+                            <button type="submit" class="btn btn-dark w-100 fw-bold" type="submit" value="Send" >Send</button>
                           </div>
                         </div>
                       </div>
