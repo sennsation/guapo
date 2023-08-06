@@ -15,50 +15,35 @@
 <?php
 // define variables and set to empty values
 $nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
+$yourName = $yourEmail = $gender = $comment = $website = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
+  if (empty($_POST["yourName"])) {
     $nameErr = "Name is required";
   } else {
-    $name = test_input($_POST["name"]);
+    $yourName = test_input($_POST["yourName"]);
     // check if name only contains letters and whitespace
-    if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+    if (!preg_match("/^[a-zA-Z-' ]*$/",$yourName)) {
       $nameErr = "Only letters and white space allowed";
     }
   }
   
-  if (empty($_POST["email"])) {
+  if (empty($_POST["yourEmail"])) {
     $emailErr = "Email is required";
   } else {
-    $email = test_input($_POST["email"]);
+    $yourEmail = test_input($_POST["yourEmail"]);
     // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    if (!filter_var($yourEmail, FILTER_VALIDATE_EMAIL)) {
       $emailErr = "Invalid email format";
     }
   }
-    
-  if (empty($_POST["website"])) {
-    $website = "";
+
+  if (empty($_POST["yourMessage"])) {
+    $yourMessage = "";
   } else {
-    $website = test_input($_POST["website"]);
-    // check if URL address syntax is valid (this regular expression also allows dashes in the URL)
-    if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
-      $websiteErr = "Invalid URL";
-    }
+    $yourMessage = test_input($_POST["yourMessage"]);
   }
 
-  if (empty($_POST["comment"])) {
-    $comment = "";
-  } else {
-    $comment = test_input($_POST["comment"]);
-  }
-
-  if (empty($_POST["gender"])) {
-    $genderErr = "Gender is required";
-  } else {
-    $gender = test_input($_POST["gender"]);
-  }
 }
 
 function test_input($data) {
@@ -174,23 +159,19 @@ function test_input($data) {
                     This contact form is copied from: https://codepen.io/tutsplus/pen/qBxPXZZ
                     The basic PHP-code for sending the form is copied from: https://www.w3schools.com/php/php_form_complete.asp
                   </p>
-                  <form>
+                  <form  method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                     <div class="row g-3">
                       <div class="col-md-12">
-                        <label for="your-name" class="form-label">Your Name and Surname</label>
-                        <input type="text" class="form-control" id="your-name" name="your-name" required>
+                        <label for="yourName" class="form-label">Your Name and Surname</label>
+                        <input type="text" class="form-control" id="yourName" name="yourName" required>
                       </div>
                       <div class="col-md-6">
-                        <label for="your-email" class="form-label">Your Email</label>
-                        <input type="email" class="form-control" id="your-email" name="your-email" required>
-                      </div>
-                      <div class="col-md-6">
-                        <label for="your-subject" class="form-label">Your Subject</label>
-                        <input type="text" class="form-control" id="your-subject" name="your-subject">
+                        <label for="yourEmail" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="yourEmail" name="yourEmail" required>
                       </div>
                       <div class="col-12">
-                        <label for="your-message" class="form-label">Your Message</label>
-                        <textarea class="form-control" id="your-message" name="your-message" rows="5" required></textarea>
+                        <label for="yourMessage" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="yourMessage" name="yourMessage" rows="5" required></textarea>
                       </div>
                       <div class="col-12">
                         <div class="row">
@@ -201,6 +182,18 @@ function test_input($data) {
                       </div>
                     </div>
                   </form>
+                  <?php
+                      echo "<h2>Your Input:</h2>";
+                      echo $Name;
+                      echo "<br>";
+                      echo $email;
+                      echo "<br>";
+                      echo $website;
+                      echo "<br>";
+                      echo $comment;
+                      echo "<br>";
+                      echo $gender;
+                      ?>
                 </div>
               </div>
             </div>
